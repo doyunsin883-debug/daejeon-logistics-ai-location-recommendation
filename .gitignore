@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local secrets and OS files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Raw public-data downloads are excluded from the public repo.
+# See docs/DATA_SOURCES.md for source links and reproduction notes.
+data/raw/*
+!data/raw/
+!data/raw/README.md
+
+# Large or generated geospatial source files
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+*.hwpx
+
+# Generated analysis outputs from scripts
+src/location_map_clustered.geojson
+src/location_ranking_clustered.csv
+src/cluster_summary.csv
